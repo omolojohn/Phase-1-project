@@ -23,6 +23,21 @@ Git
 ###### Installation instructions
 Git clone https://github.com/omolojohn/Phase-1-project.git
 
+###### Getting started
+To use this application, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open the index.html file in a web browser.
+
+###### Usage
+.Click the "Generate Quote" button to fetch and display a random quote.
+.Click the "Like" button to save the currently displayed quote to your liked quotes list.
+.Click the "Share" button to share the currently displayed quote on social media platforms.
+.Click the "Download" button to download the currently displayed quote as a text file.
+
+###### Dependencies
+This project does not have any external dependencies. It uses vanilla/raw JavaScript to interact with the Quotable API.
+
 
 
 
