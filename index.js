@@ -17,17 +17,12 @@ function getRandomQuote() {
     .then(response => response.json())
     .then(data => {
         if (data.hasOwnProperty('content') && data.hasOwnProperty('author')) {
-            quoteElement.innerHTML = `${data.content}<br>- ${data.author}`;
-
-
-            
-        } else {
-            quoteElement.innerHTML = "Failed to fetch a random quote. Please try again later.";
-        }
+            quoteElement.innerHTML = `${data.content}<br>- ${data.author}`
+   
+        } 
     })
     .catch(error => {
-        //console.error('Error fetching random quote:', error);
-        quoteElement.innerHTML = "Failed to fetch a random quote. Please try again later.";
+       
     });
 }
 
