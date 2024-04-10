@@ -38,6 +38,22 @@ To use this application, follow these steps:
 ###### Dependencies
 This project does not have any external dependencies. It uses vanilla/raw JavaScript to interact with the Quotable API.
 
+###### Live link
+
+###### technologies used
+1. HTML
+2. CSS
+3. JavaScript
+4. Quotable API
+
+###### Contributing
+Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue on GitHub.
+
+###### Support and Contact details
+github/quotableapi/omolojohn
+
+######
+
 
 
 
