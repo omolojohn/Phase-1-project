@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 const quoteElement = document.getElementById('quote');
 const generateBtn = document.getElementById('generateBtn');
 const likeBtn = document.getElementById('likeBtn');
@@ -26,7 +27,8 @@ function getRandomQuote() {
     .then(response => response.json())
     .then(data => {
         if (data.hasOwnProperty('content') && data.hasOwnProperty('author')) {
-            quoteElement.innerHTML = `${data.content}<br>- ${data.author}`
+            quoteElement.innerHTML = `${data.content}
+            - ${data.author}`
    
         } 
     })
@@ -46,7 +48,7 @@ function likeQuote() {
 // Function to share a quote
 function shareQuote() {
     const quoteToShare = quoteElement.textContent;
-    const shareURL = `https://api.quotable.io/randome=${encodeURIComponent(quoteToShare)}`;
+    const shareURL = `https://api.quotable.io/random=${encodeURIComponent(quoteToShare)}`;
     window.open(shareURL, '_blank');
 }
 
@@ -73,3 +75,4 @@ function displayLikedQuotes() {
         likedQuotesList.appendChild(li);
     });
 }
+});
