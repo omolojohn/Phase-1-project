@@ -3,11 +3,17 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #dad1cb;
 }
 
 #quote {
     margin-top: 50px;
     font-size: 24px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d106061a;
 }
 
 button {
@@ -22,5 +28,5 @@ button {
 }
 
 button:hover {
-    background-color: #f00f0f;
+    background-color: #e50404;
 }
