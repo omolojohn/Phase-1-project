@@ -41,7 +41,7 @@ This project does not have any external dependencies. It uses vanilla/raw JavaSc
 ###### Live link
 https://omolojohn.github.io/Phase-1-project/
 
-###### technologies used
+###### Technologies used
 1. HTML
 2. CSS
 3. JavaScript
