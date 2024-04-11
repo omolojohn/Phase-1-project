@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const quoteElement = document.getElementById('quote');
 const generateBtn = document.getElementById('generateBtn');
 const likeBtn = document.getElementById('likeBtn');
-const shareBtn = document.getElementById('shareBtn');
 const likedQuotesList = document.getElementById('likedQuotesList');
 const downloadBtn = document.getElementById('downloadBtn');
 
@@ -19,6 +18,11 @@ shareBtn.addEventListener('click', shareQuote);
 
 // Event listener for downloading a quote
 downloadBtn.addEventListener('click', downloadQuote)
+
+ // Mouseover event listener for the quote element
+ quoteElement.addEventListener('mouseover', function() {
+    console.log('Mouse over the quote element');
+});
 
 
 // Function to fetch a random quote from the API
@@ -43,13 +47,6 @@ function likeQuote() {
     likedQuotes.push(currentQuote);
     alert('Quote liked!');
     displayLikedQuotes();
-}
-
-// Function to share a quote
-function shareQuote() {
-    const quoteToShare = quoteElement.textContent;
-    const shareURL = `https://api.quotable.io/random=${encodeURIComponent(quoteToShare)}`;
-    window.open(shareURL, '_blank');
 }
 
 // Function to download a quote
