@@ -39,6 +39,7 @@ To use this application, follow these steps:
 This project does not have any external dependencies. It uses vanilla/raw JavaScript to interact with the Quotable API.
 
 ###### Live link
+https://omolojohn.github.io/Phase-1-project/
 
 ###### technologies used
 1. HTML
