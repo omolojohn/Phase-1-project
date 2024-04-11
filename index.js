@@ -29,7 +29,7 @@ function getRandomQuote() {
     .then(response => response.json())
     .then(data => {
         if (data.hasOwnProperty('content') && data.hasOwnProperty('author')) {
-            quoteElement.innerHTML = `${data.content}
+            quoteElement.textContent = `${data.content}
             - ${data.author}`
    
         } 
@@ -41,7 +41,7 @@ function getRandomQuote() {
 
 // Function to like a quote
 function likeQuote() {
-    const currentQuote = quoteElement.innerHTML;
+    const currentQuote = quoteElement.textContent;
     likedQuotes.push(currentQuote);
     alert('Quote liked!');
     displayLikedQuotes();
