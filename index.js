@@ -13,14 +13,12 @@ generateBtn.addEventListener('click', getRandomQuote);
 // Event listener for liking a quote
 likeBtn.addEventListener('click', likeQuote)
 
-// Event listener for sharing a quote
-shareBtn.addEventListener('click', shareQuote);
-
 // Event listener for downloading a quote
 downloadBtn.addEventListener('click', downloadQuote)
 
  // Mouseover event listener for the quote element
  quoteElement.addEventListener('mouseover', function() {
+
     console.log('Mouse over the quote element');
 });
 
